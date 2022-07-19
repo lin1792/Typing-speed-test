@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: calc(50% - 120px);
+  left: calc(50% - 100px);
+  width: 200px;
+  height: 250px;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  .title {
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    background-color: rgb(250, 195, 94);
+  }
+
+  .write {
+    flex: 1;
+    border-bottom: 2px solid orange;
+
+    font-size: 150px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 198px;
+    color: #fff;
+  }
+
+  .btArea {
+    height: 30px;
+    padding: 3px 20px;
+
+    #start {
+      width: 75px;
+      background-color: orange;
+      margin-right: 5px;
+    }
+
+    #recording {
+      width: 75px;
+      background-color: orange;
+    }
+
+    #start:hover {
+      cursor: pointer;
+    }
+
+    #recording:hover {
+      cursor: pointer;
+    }
+  }
+
+}

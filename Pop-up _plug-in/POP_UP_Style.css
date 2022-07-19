@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.PopUp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.PopUp .alert {
+  width: 300px;
+  height: 300px;
+  border: 1px solid orange;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 2%;
+}
+.PopUp .alert .header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+  width: 100%;
+  height: 20%;
+  line-height: calc(300px*0.2);
+  border-bottom: 1px solid #ccc;
+  background-color: orange;
+  border-radius: 2%;
+}
+.PopUp .alert .header .title {
+  font-size: 30px;
+  font-weight: 900;
+}
+.PopUp .alert .header .title:hover {
+  cursor: default;
+}
+.PopUp .alert .header .close:hover {
+  color: red;
+  cursor: pointer;
+}
+.PopUp .alert .main {
+  flex: 1;
+  padding: 30px;
+  border-bottom: 1px solid orange;
+}
+.PopUp .alert .btnList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  padding: 0 30px;
+}
+.PopUp .alert .btnList .btn {
+  width: 150px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+.PopUp .alert .btnList .btn:hover {
+  cursor: pointer;
+}
+.PopUp .alert .btnList .btn:first-child {
+  background-color: orange;
+  margin-right: 10px;
+  border-radius: 2%;
+}
+.PopUp .alert .btnList .btn:last-child {
+  background-color: #999;
+  border-radius: 2%;
+}

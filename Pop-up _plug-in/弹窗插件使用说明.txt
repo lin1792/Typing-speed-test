@@ -1,0 +1,12 @@
+//引入js与css文件并根据需求在适当位置调用以下myAlert函数并自定义内部参数即可，，（btn为点击位置）
+btn.onclick =function(){
+      myAlert({
+        title:'温馨提示',
+        close:'X',
+        main:'请添加自定义内容！',
+        comfirm:'确定',
+        concel:'取消',
+        comfirmFn:function(){},
+        concelFn:function(){}
+      })
+    }
